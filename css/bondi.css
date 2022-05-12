@@ -1,0 +1,65 @@
+:root {
+    --dark: #19283f;
+    --green: #33d1cc;
+    --red: #ff3150;
+    --yellow: #ffc400;
+    --section-c: #eff7fa;
+}
+* {
+    text-transform: capitalize;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.main-btn {
+    background-color: var(--red);
+    color: var(--yellow);
+}
+.main-btn:hover {
+    background-color: var(--green);
+    color: var(--dark) !important;
+}
+.main-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green);
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+a {
+    text-decoration: none;
+    display: block;
+    transition: all .3s;
+}
+/* Start navbar */
+.navbar {
+    background-color: var(--dark);
+}
+.navbar .nav-link {
+    color: #fff;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
+    color: var(--green);
+}
+.navbar .search {
+    color: var(--green) !important;
+    border-left: 1px solid var(--green);
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green) !important;
+}
+/* End navbar */
+/* Start landing */
+.landing {
+    background-color: var(--dark);
+    min-height: calc(100vh - 72px);
+}
+/* End landing */
